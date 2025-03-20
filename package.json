@@ -1,0 +1,22 @@
+{
+  "name": "grammy-bun-demo",
+  "version": "1.0.0",
+  "license": "MIT",
+  "scripts": {
+    "seed": "bun run scripts/apply-snapshot.ts",
+    "dev": "bun run --watch src/index.ts",
+    "start": "bun run src/index.ts"
+  },
+  "dependencies": {
+    "@directus/sdk": "^19.0.1",
+    "@google/generative-ai": "^0.24.0",
+    "@grammyjs/conversations": "^2.0.1",
+    "elysia": "latest",
+    "grammy": "^1.35.0",
+    "zod": "^3.24.2"
+  },
+  "devDependencies": {
+    "@types/bun": "^1.2.5"
+  },
+  "module": "src/index.js"
+}
